@@ -41,16 +41,33 @@
     <div id="wrapper">
         <header></header>
         <main>
-            <div id="mainvisual">
-                <h1>
-                    <picture>
-                        <source src="" type="">
-                        <img src="" alt="">
-                    </picture>
+            <!--
+            <div>
+                <img class="pc_border" src="images/top/forpc_border.svg" alt="">
+                <img class="sp_border" src="images/top/forsp_border.svg" alt="">
+            </div>-->
+            <picture class="mainvisual_bg">
+                <source type="image/webp" srcset="images/top/bg.webp">
+                <source type="image/avif" srcset="images/top/bg.avif">
+                <img src="images/top/bg.jpg" alt="" width="1685" height="2384">
+            </picture>
+            <div id="mainvisual" class="mainvisual_contaier">
+                <h1 class="mainvisual_logo">
+                    <img src="images/top/logo_hero.svg" alt="星のみちびき">
                 </h1>
-                <div></div>
-                <p>Coming Soon</p>
+
+                <picture class="mainvisual_planet">
+                    <source type="image/webp" srcset="images/top/top_planet.webp">
+                    <source type="image/avif" srcset="images/top/top_planet.avif">
+                    <img src="images/top/top_planet.png" alt="" width="865" height="792">
+                </picture>
+                <div class="mainvisual_stars">
+                    <img src="images/top/top_stars.svg" alt="">
+                </div>
+
+
             </div>
+            <section></section>
 
         </main>
         <footer></footer>
