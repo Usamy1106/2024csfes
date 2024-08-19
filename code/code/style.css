@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --color-white: #fff;
+    --en-font1: "futura-pt", sans-serif;
+    --en-font2: "neue-haas-grotesk-display", sans-serif;
+    --jp-font: "yu-gothic-pr6n", sans-serif;
+    --font-size-M: clamp(1.4rem, calc(1.2rem + 0.625vw), 2rem);
+    --font-size-L: clamp(2.4rem, calc(2.2rem + 0.625vw), 2.9rem);
+}
+
+/*font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+font-family: yu-gothic-pr6n, sans-serif;
+font-weight: 400;
+font-style: normal;*/
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a,address{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--color-white);
+
+}
+
+.mainvisual_container {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.mainvisual_logo {
+    position: absolute;
+    width: 60vw;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+.mainvisual_bg {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
+.mainvisual_bg img {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.mainvisual_planet {
+    display: block;
+    position: absolute;
+    width: 30vw;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.mainvisual_stars {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0.65;
+    z-index: 10;
+}
+
+.mainvisual_stars img {
+    width: 140vw;
+    position: relative;
+    left: -20vw;
+}
+
+/*
+.pc_border {
+    display: block;
+}
+
+.sp_border {
+    display: none;
+}
+*/
+.information {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34vw;
+    z-index: 999;
+    margin-bottom: 16vh;
+}
+
+.concept_text {
+    max-width: 39vw;
+    margin: 110vh auto 10vh;
+    text-align: center;
+    color: var(--color-white);
+    font-family: var(--jp-font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-M);
+    z-index: 999;
+}
+
+.access{
+    max-width: 39vw;
+    margin: 0 auto;
+    color: var(--color-white);
+    z-index: 999;
+}
+.access h2 span{
+    font-family: var(--en-font1);
+    font-weight: 500;
+    font-style: italic;
+    font-size: var(--font-size-L);
+}
+.access address,a,p{
+    font-family: var(--jp-font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-M);
+}
+
+@media only screen and (max-width: 750px) {
+    .mainvisual_logo {
+        width: 98vw;
+        top: 15%;
+    }
+
+    .mainvisual_planet {
+        width: 68vw;
+        top: 50%;
+    }
+
+    .mainvisual_stars {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -49.8%);
+    }
+
+    .mainvisual_stars img {
+        width: 280vw;
+        left: -90vw;
+    }
+
+    .information {
+        top: 74vh;
+        width: 90vw;
+    }
+
+    .concept_text{
+        margin: 84vh auto 10vh;
+    }
+}
+
+#wrapper,
+main,
+header,
+footer,
+section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
