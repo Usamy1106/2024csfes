@@ -34,12 +34,21 @@
         content="東京造形大学CS祭 2024 公式サイト 星は創る。星は魅せる。星はつながる。星はもっと輝く。星たちはきみを未だ見ぬ世界へとつれていってくれる。一緒に行こう 星のみちびきのままに!" />
 
     <link rel="stylesheet" href="style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'nqt6wrv',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
     <div id="splash"></div>
     <div id="wrapper">
-        <header></header>
         <main>
             <!--
             <div>
@@ -64,11 +73,33 @@
                 <div class="mainvisual_stars">
                     <img src="images/top/top_stars.svg" alt="">
                 </div>
-
-
+                <div class="information">
+                    <img src="images/top/info.svg" alt="10月18日から10月20日">
+                </div>
             </div>
-            <section></section>
-
+            <section class="concept_text">
+                <p>
+                    星は創る。星は魅せる。星はつながる。星はもっと輝く。<br>星たちはきみを未だ見ぬ世界へとつれていってくれる。<br>一緒に行こう 星のみちびきのままに!
+                </p>
+            </section>
+            <section class="access">
+                <h2>
+                    <span>ACCESS</span>
+                    <picture class="mainvisual_planet">
+                        <source type="image/webp" srcset="images/top/top_planet.webp">
+                        <source type="image/avif" srcset="images/top/top_planet.avif">
+                        <img src="images/top/top_planet.png" alt="" width="865" height="792">
+                    </picture>
+                </h2>
+                <address>東京造形大学</address>
+                <address>〒192-0992 東京都八王子市宇津貫町1556</address>
+                <p>Tel:<a href="042-637-8111">042-637-8111</a></p>
+                <p>交通：JR横浜線相原駅よりスクールバス5分・徒歩15分</p>
+                <a href="https://www.zokei.ac.jp/museum/about/">https://www.zokei.ac.jp/museum/about/</a>
+            </section>
+            <section>
+                <p>Coming Soon</p>
+            </section>
         </main>
         <footer></footer>
     </div>
